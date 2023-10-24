@@ -19,6 +19,31 @@
       --dark-color: #000;
     }
 
+    .header {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      /* Adjust the size as needed */
+      color: #FF4757;
+      /* Modern red */
+      z-index: 1;
+      /* To keep it above other elements */
+    }
+
+    .heart {
+      width: 24px;
+      /* Same as font-size for alignment */
+      height: 24px;
+      background-color: #FF4757;
+      /* Modern red */
+      margin-left: 10px;
+      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 60%, 18% 100%, 0% 38%);
+    }
+
     body {
       display: flex;
       align-items: flex-end;
@@ -1614,6 +1639,11 @@
 </head>
 
 <body>
+
+  <div class="header">
+    <span>Flowers for Jie</span>
+    <div class="heart"></div>
+  </div>
 
   <body class="not-loaded">
     <div class="night"></div>
