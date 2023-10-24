@@ -19,29 +19,28 @@
       --dark-color: #000;
     }
 
+    /* Container for text and heart */
     .header {
       position: absolute;
-      top: 10%;
+      /* Absolute positioning */
+      top: 20%;
+      /* From the top */
       left: 50%;
+      /* Center horizontally */
       transform: translate(-50%, -50%);
+      /* Centering adjustment */
       display: flex;
+      /* Flex layout to align items horizontally */
       align-items: center;
-      font-size: 24px;
-      /* Adjust the size as needed */
-      color: #FF4757;
-      /* Modern red */
+      /* Center items vertically */
+      font-size: 30px;
+      /* Font size */
+      font-family: Arial, sans-serif;
+      /* Font family */
+      color: rgba(255, 71, 87, 0.8);
+      /* Text color with transparency */
       z-index: 1;
-      /* To keep it above other elements */
-    }
-
-    .heart {
-      width: 24px;
-      /* Same as font-size for alignment */
-      height: 24px;
-      background-color: #FF4757;
-      /* Modern red */
-      margin-left: 10px;
-      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 60%, 18% 100%, 0% 38%);
+      /* Z-index set to 1 */
     }
 
     body {
@@ -1640,12 +1639,10 @@
 
 <body>
 
-  <div class="header">
-    <span>Flowers for Jie</span>
-    <div class="heart"></div>
-  </div>
-
   <body class="not-loaded">
+    <div class="header">
+      <span>Flowers for Jie <3</span>
+    </div>
     <div class="night"></div>
     <div class="flowers">
       <div class="flower flower--1">
@@ -1950,7 +1947,7 @@
     const c = setTimeout(() => {
       document.body.classList.remove("not-loaded");
       clearTimeout(c);
-    }, 1000);
+    }, 500);
   };
 </script>
 
