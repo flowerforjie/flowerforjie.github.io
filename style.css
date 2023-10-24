@@ -2,6 +2,7 @@
 	position:fixed;
 	bottom:180px;
 	left:50%;
+	transform: translateX(-50%);
 }
 .sunflower{
   position:relative;
