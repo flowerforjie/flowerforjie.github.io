@@ -1,3 +1,14 @@
+#text {
+    position: fixed;
+    bottom: 260px; /* adjust this value to position the text above the sunflower */
+    left: 50%;
+    transform: translateX(-50%); /* center the text horizontally */
+    color: rgba(255, 0, 0, 0.7); /* modern red with transparency */
+    font-family: 'Arial', sans-serif; /* modern font */
+    font-size: 24px;
+    text-align: center;
+}
+
 #position{
 	position:fixed;
 	bottom:180px;
